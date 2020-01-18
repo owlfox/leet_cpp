@@ -26,5 +26,6 @@ endmacro()
 include(CTest)
 
 # add_subdirectory(env_test)
+#add_subdirectory(leet)
 # add_subdirectory(eopi)
-add_subdirectory(leet)
+add_subdirectory(ccc)
