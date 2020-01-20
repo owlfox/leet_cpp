@@ -4,7 +4,7 @@ using namespace std;
 class Solution
 {
 public:
-    int minTimeToVisitAllPoints(vector<vector<int>>& points) 
+    int rangeSumBST(TreeNode* root, int L, int R)
     {
         vector<vector<int>>::iterator it = points.begin();
         vector<vector<int>>::iterator next;
