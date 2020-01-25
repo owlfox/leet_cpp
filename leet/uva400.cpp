@@ -1,3 +1,4 @@
+
 #ifndef MAIN
 #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch2/catch.hpp"
@@ -7,6 +8,8 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
+#include <cstddef>
 using namespace std;
 
 
@@ -35,8 +38,6 @@ void displayNames(vector<string>& input, size_t sizeWord, size_t lineWidth=60) {
         auto position = c < words_last_row ? c*(lines_count+1)+r : c*lines_count+r;
         cout << input[position];
         if(c == words_per_line - 1) cout << endl;
-        
-
     }
     
 }
