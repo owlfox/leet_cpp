@@ -3,19 +3,23 @@ use cmake to TDD my solutions to leetcode
 at the moment I'm using vscode cmake extension
 to build and run the tests.
 
+This is more like a meta repo for my c++ related stuff
+
 ## dependency catch2
 ```
-git submodule init
-git submodule update
+mkdir build && cd build
+conan install ..
+conan build ..
+cmake ..
+make && make test
 ```
 
-
-# cpp note
-
-## types
-* char16_t utfstr[] = "中文";
-
-## user defined types
-* enum class
-* union
-provides an way to access a data in different ways.
+# TODO
+* learn cmake
+* try ninja
+* RxCPP
+* Actor CPP
+* networking with boost.asio
+* logger
+* DSP example
+* Dahua Data structure
