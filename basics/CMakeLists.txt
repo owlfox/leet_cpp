@@ -5,3 +5,4 @@ project(basics LANGUAGES CXX)
 #   source1 [source2 ...]
 # )
 catch_add_test(types types.cpp)
+catch_add_test(pack pack.cpp)
