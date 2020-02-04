@@ -4,7 +4,7 @@
 
 using Poco::BasicEvent;
 using Poco::delegate;
-
+//https://pocoproject.org/docs/00100-GuidedTour.html
 class Source
 {
 public:
@@ -28,13 +28,18 @@ public:
 int main(int argc, char** argv)
 {
     Source source;
-    Target target;
+    Target target1, target2;
 
-    source.theEvent += delegate(&target, &Target::onEvent);
+    source.theEvent += delegate(&target1, &Target::onEvent);
+    source.theEvent += delegate(&target2, &Target::onEvent);
 
     source.fireEvent(42);
+    source.fireEvent(23);
 
-    source.theEvent -= delegate(&target, &Target::onEvent);
+    source.theEvent -= delegate(&target1, &Target::onEvent);
+    source.theEvent -= delegate(&target2, &Target::onEvent);
+
+    source.fireEvent(42);
 
     return 0;
 }
