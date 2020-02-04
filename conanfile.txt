@@ -1,5 +1,20 @@
  [requires]
 catch2/2.11.0
+poco/1.10.0
+boost/1.71.0
+rxcpp/4.1.0@bincrafters/stable
+caf/0.17.3@bincrafters/stable
+# todo: add grpc
+# https://github.com/grpc/grpc/blob/master/src/cpp/README.md#make
+# grpc/1.26.0@inexorgame/stable
+protobuf/3.9.1@bincrafters/stable
+# bad  beast breaks dependacy
+# boost_beast/1.69.0@bincrafters/stable
+# gtest/1.8.1@bincrafters/stable
+# libpq/11.5@bincrafters/stable
+sqlitecpp/2.4.0
+
+# c-ares/1.15.0@conan/stable
 
  [generators]
  cmake
