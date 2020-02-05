@@ -9,42 +9,40 @@ using namespace Catch::Matchers;
 using namespace std;
 
 class Fun {
-       private:
-	string mName{};
+ private:
+  string mName{};
 
-       public:
-	Fun(const string &in) { mName = in; }
-	string GetName() const { return mName; }
+ public:
+  Fun(const string &in) { mName = in; }
+  string GetName() const { return mName; }
 };
 class Fun1 {
-       private:
-	string mName{};
+ private:
+  string mName{};
 
-       public:
-	Fun1(const string &in) { mName = in; }
-	const string &GetName() const { return mName; }
-	string &GetRef() { return mName; }
+ public:
+  Fun1(const string &in) { mName = in; }
+  const string &GetName() const { return mName; }
+  string &GetRef() { return mName; }
 };
 TEST_CASE("Test Const!") {
-	SECTION("see the diff") {
-		Fun f{"hahaha"};
-		Fun1 f1{"hehehe"};
-		auto s = f.GetName();
-		s = "123";
-		auto s1 = f1.GetName();
-		s1 = "456";
+  SECTION("see the diff") {
+    Fun f{"hahaha"};
+    Fun1 f1{"hehehe"};
+    auto s = f.GetName();
+    s = "123";
+    auto s1 = f1.GetName();
+    s1 = "456";
 
-		REQUIRE(f.GetName() == "hahaha");
+    REQUIRE(f.GetName() == "hahaha");
 
-		REQUIRE(f1.GetName() == "hehehe");
-		auto r = f1.GetRef();
-		r = "changed";
-		REQUIRE(f1.GetName() == "changed");
-	}
+    REQUIRE(f1.GetName() == "hehehe");
+
+    f1.GetRef() = "changed";
+    REQUIRE(f1.GetName() == "changed");
+  }
 }
 
 TEST_CASE("const member function") {
-	SECTION("const const const!") {
-
-	}
+  SECTION("const const const!") {}
 }

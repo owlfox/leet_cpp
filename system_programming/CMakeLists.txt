@@ -4,4 +4,4 @@ project(eopi LANGUAGES CXX)
 
 
 
-catch_add_test(packing packing.cpp)
+#catch_add_test(packing packing.cpp)
