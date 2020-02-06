@@ -12,5 +12,7 @@ catch_add_test(1325 1325removeLeafNodes.cpp)
 catch_add_test(338 338countBits.cpp)
 
 catch_add_test(617 617mergeTrees.cpp)
+catch_add_test(144 preorderTraversal.cpp)
+catch_add_test(226invertTree 226invertTree.cpp)
 # UVA problems
 #catch_add_test(uva400 uva400.cpp)
