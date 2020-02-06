@@ -9,7 +9,6 @@ This is more like a meta repo for my c++ related stuff
 ```
 mkdir build && cd build
 conan install ..
-conan build ..
 cmake ..
 make && make test
 ```
