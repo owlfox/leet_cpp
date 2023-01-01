@@ -1,9 +1,10 @@
-# summary
-use cmake to TDD my solutions to leetcode
-at the moment I'm using vscode cmake extension
-to build and run the tests.
+# Introduction
+This repository uses cmake to build and test my c++ solutions to leetcode.
 
-This is more like a meta repo for my c++ related stuff
+At the moment I'm using vscode Microsoft cmake extension to build and run the tests.
+
+Somehow this is also a repo with many of my c++ related code/learning material.. 
+Bear with me I will clean this up..
 
 ## dependency catch2
 ```
