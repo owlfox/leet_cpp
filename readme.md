@@ -6,31 +6,32 @@ At the moment I'm using vscode Microsoft cmake extension to build and run the te
 * Practice data structures and algorithms in leet code that are essential for a developer to success in daily tasks.
 * Incoproate modern build and test tools/flows into the repo like cmake(For cmake basics, see examples in `modern_cmake` folder).
 * all codes here should be easy to build and come with easy to understand tests.
-
+* All major data structures and algorithms should be reviewed.
+* Bear good engineering writing in mind, write clean and well documented code for your future self.
 
 Note: Somehow this is also a repo with many of my c/c++ related code/learning material.. 
 Bear with me I will clean this up..
 
-# WIP...
 
-## dependencies 
-* `conan`, a c/c++ library manager: `pip install conan`
+## Leet code solutions and their unit tests
+1. catch2 is being used to test, which is installed by `conan`, a c/c++ library manager( `pip install conan`)
 
-## cpp dependency catch2
+2. run followed commands to build and test:
+
 ```
-mkdir -p build && cd build
-conan install ..
-cmake ..
-ninja
+cmake -S ./ -B build
+cd build;
+conan install ../
 make && make test
 ```
 
 # TODO
-* learn cmake
-    install it from https://github.com/Kitware/CMake/releases, bash with *.sh
+* learn cmake 
+    install cmake-3.25.1 from https://github.com/Kitware/CMake/releases, bash the *.sh to install locally
     source source.sh
-    cd
-* try ninja
+
+
+
 * RxCPP
 * Actor CPP
 * networking with boost.asio
