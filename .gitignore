@@ -5,3 +5,4 @@ cmake-build-debug/
 *.swp
 a.out
 .DS_STORE
+cmake-*

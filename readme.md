@@ -1,6 +1,5 @@
 ## Introduction
-This repository uses cmake to build and test my c++ solutions to leetcode.
-At the moment I'm using vscode Microsoft cmake extension to build and run the tests.
+This repository uses cmake to build and test my C++ solutions to leetcode or say, ideally, any good/1337/leet code snippet I found interesting while practicing C++ system programming.
 
 ## Goals:
 * Practice data structures and algorithms in leet code that are essential for a developer to success in daily tasks.
@@ -14,15 +13,12 @@ Bear with me I will clean this up..
 
 
 ## Leet code solutions and their unit tests
-1. catch2 is being used to test, which is installed by `conan`, a c/c++ library manager( `pip install conan`)
-
-2. run followed commands to build and test:
+1. run followed commands to build and test:
 
 ```
 cmake -S ./ -B build
-cd build;
-conan install ../
-make && make test
+cmake --build build && cd build && ctest && cd -
+
 ```
 
 # TODO
@@ -40,3 +36,6 @@ make && make test
 * Dahua Data structure
 * Error report / deadly signal handler examples for program crash:
   * http://msinilo.pl/blog2/post/p269/
+
+# Reference
+1. https://github.com/PacktPublishing/Modern-CMake-for-Cpp
