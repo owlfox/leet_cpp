@@ -16,19 +16,21 @@ include(Catch)
 
 
 macro(catch_add_test TESTNAME)
-  add_library(${TESTNAME} STATIC ${TESTNAME}.cxx)
-  target_link_libraries(${TESTNAME} PRIVATE Catch2::Catch2WithMain)
 
   # If you got a main entry point, renaming your main into run or something else could help prepare your code
   # for testing, below is one of the example.
+  #add_library(${TESTNAME} STATIC ${TESTNAME}.cxx)
+  #target_link_libraries(${TESTNAME} PRIVATE Catch2::Catch2WithMain)
   #add_executable(r${TESTNAME} run.cxx)
   #target_link_libraries(r977 PRIVATE 977)
 
   add_executable(t${TESTNAME} ${TESTNAME}.cxx)
   target_link_libraries(t${TESTNAME} PRIVATE
-                      ${TESTNAME}
                       Catch2::Catch2WithMain)
+  set_property(TARGET t${TESTNAME} PROPERTY CXX_STANDARD 23)
   catch_discover_tests(t${TESTNAME})
 endmacro()
 
 catch_add_test(977)
+catch_add_test(111)
+catch_add_test(643)
