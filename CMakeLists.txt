@@ -1,5 +1,14 @@
 cmake_minimum_required(VERSION 3.21.0)
+#Testing purpose
+set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/g++-12" CACHE STRING "C++ compiler" FORCE)
 project(LeetWithCatch2 CXX)
+
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+  if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS "12")
+    message(FATAL_ERROR "Insufficient gcc version from ${CMAKE_CXX_COMPILER} ${CMAKE_CXX_COMPILER_VERSION}")
+  endif()
+endif()
+
 enable_testing()
 add_subdirectory(src)
 

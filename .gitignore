@@ -5,4 +5,6 @@ cmake-build-debug/
 *.swp
 a.out
 .DS_STORE
+
+#local cmake install https://cmake.org/install/
 cmake-*
