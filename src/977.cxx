@@ -14,6 +14,11 @@ public:
         std::sort(nums.begin(), nums.end());
         return std::move(nums);
     }
+    vector<int> sortedSquaresFaster(vector<int>& nums) {
+        //TODO: leverage the fact that the input list is sorted.
+        return std::move(nums);
+    }
+
 
     
 };
