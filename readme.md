@@ -4,6 +4,7 @@ This repository uses cmake to build and test my C++ solutions to leetcode or say
 ## Goals:
 * Practice data structures and algorithms in leet code that are essential for a developer to success in daily tasks.
 * Incoproate modern build and test tools/flows with cmake.
+* All leetcode problems on [grind75](https://www.techinterviewhandbook.org/grind75)
 * All major data structures and algorithms interviewer cares should be reviewed.
 * Bear good engineering writing in mind, write clean and well documented code for your future self. All codes here should be easy to build and come with easy to understand tests.(I forget from time to time..- -)
 
