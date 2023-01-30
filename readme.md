@@ -4,8 +4,20 @@ This repository uses cmake to build and test my C++ solutions to leetcode or say
 ## Goals:
 * Practice data structures and algorithms in leet code that are essential for a developer to success in daily tasks.
 * Incoproate modern build and test tools/flows with cmake.
-* All major data structures and algorithms interviewer cares should be reviewed.
+* All major data structures and algorithms interviewer cares should be reviewed:
+  * Linked List
+    * [src/876.cxx](src/876.cxx)
+  * Array
+  * Hash Table
+  * Tree, Graph and traversal of them
+  * stacks and queues
+  * Heaps
+  * Binary search
+  * Backtracking
+  * Greedy algorithms
+  * DP(Dynamic Programming)
 * Bear good engineering writing in mind, write clean and well documented code for your future self. All codes here should be easy to build and come with easy to understand tests.(I forget from time to time..- -)
+* The time/space complexity should also be estimated in each solution and its improved versions.
 
 Note: Somehow this is also a repo with many of my c/c++ related code/learning material.. 
 Bear with me I will clean this up..

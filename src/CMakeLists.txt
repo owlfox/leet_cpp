@@ -37,3 +37,6 @@ catch_add_test(643)
 catch_add_test(1)
 catch_add_test(2351)
 catch_add_test(1832)
+# linked lists
+catch_add_test(876)
+catch_add_test(83)
