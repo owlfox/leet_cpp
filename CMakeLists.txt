@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.21.0)
 #Testing purpose
-set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/g++-12" CACHE STRING "C++ compiler" FORCE)
+find_program(local_gpp12 "g++-12")
+IF(local_gpp12)
+    set(CMAKE_CXX_COMPILER "${local_gpp12}" CACHE STRING "C++ compiler" FORCE)
+ELSE()
+    set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/g++-12" CACHE STRING "C++ compiler" FORCE)
+ENDIF()
 project(LeetWithCatch2 CXX)
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
