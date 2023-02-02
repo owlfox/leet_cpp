@@ -42,6 +42,11 @@ catch_add_test(1832)
 catch_add_test(876)
 catch_add_test(83)
 
+# Hash table / map
+catch_add_test(383)
+
 # stack
 catch_add_test(20)
 
+# Greedy
+catch_add_test(1323)
