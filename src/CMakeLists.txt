@@ -38,6 +38,9 @@ catch_add_test(1)
 catch_add_test(2351)
 catch_add_test(1832)
 
+# Array/two pointer
+catch_add_test(121)
+
 # linked lists
 catch_add_test(876)
 catch_add_test(83)
