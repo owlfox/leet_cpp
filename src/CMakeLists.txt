@@ -41,6 +41,7 @@ catch_add_test(1832)
 # linked lists
 catch_add_test(876)
 catch_add_test(83)
+catch_add_test(21)
 
 # Hash table / map
 catch_add_test(383)
