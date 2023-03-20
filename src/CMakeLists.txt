@@ -38,8 +38,12 @@ catch_add_test(1)
 catch_add_test(2351)
 catch_add_test(1832)
 
+# String 
+catch_add_test(6)
+
 # Array/two pointer
 catch_add_test(121)
+catch_add_test(125)
 
 # linked lists
 catch_add_test(876)
