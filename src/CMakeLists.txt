@@ -38,6 +38,9 @@ catch_add_test(1)
 catch_add_test(2351)
 catch_add_test(1832)
 
+#array
+catch_add_test(1004)
+
 # String 
 catch_add_test(6)
 
@@ -58,3 +61,7 @@ catch_add_test(20)
 
 # Greedy
 catch_add_test(1323)
+
+#tree / graph
+catch_add_test(226)
+catch_add_test(261)
