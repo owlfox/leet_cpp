@@ -65,3 +65,4 @@ catch_add_test(1323)
 #tree / graph
 catch_add_test(226)
 catch_add_test(261)
+catch_add_test(547)
